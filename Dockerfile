@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER neil@grogan.ie
 
-ENV DIRPATH /data
+ENV DIRPATH /scripts
 
 RUN apt-get update && \
     apt-get install -y \
