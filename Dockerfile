@@ -22,7 +22,7 @@ RUN apt-get update && \
     libunicode-string-perl \
     liburi-perl \
     cpanminus
-RUN cpanm Data::Uniqid Mail::IMAPClient
+RUN /usr/bin/cpanm Data::Uniqid Mail::IMAPClient
 
 WORKDIR $DIRPATH
 
