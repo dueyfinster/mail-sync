@@ -5,6 +5,7 @@ ENV DIRPATH /data
 
 RUN apt-get update && \
     apt-get install -y \
+    build-essential \
     libauthen-ntlm-perl \
     libcrypt-ssleay-perl \
     libdigest-hmac-perl \
@@ -21,8 +22,8 @@ RUN apt-get update && \
     libtest-simple-perl     \
     libunicode-string-perl \
     liburi-perl \
-    cpanminus
-RUN /usr/bin/cpanm Data::Uniqid Mail::IMAPClient
+    cpanminus && \
+    /usr/bin/cpanm Data::Uniqid Mail::IMAPClient
 
 WORKDIR $DIRPATH
 
