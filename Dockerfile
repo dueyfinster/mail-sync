@@ -25,6 +25,8 @@ RUN apt-get update && \
     cpanminus && \
     /usr/bin/cpanm Data::Uniqid Mail::IMAPClient
 
+COPY imapsync/imapsync /usr/bin/imapsync
+
 WORKDIR $DIRPATH
 
 VOLUME $DIRPATH
