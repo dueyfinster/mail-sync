@@ -1,4 +1,5 @@
 #!/bin/bash
+# See: http://imapsync.lamiral.info/FAQ.d/FAQ.Gmail.txt
 IMAP_SYNC="/usr/bin/imapsync"
 HOST1="mail.messagingengine.com"
 HOST2="imap.gmail.com"
@@ -7,7 +8,7 @@ HOST2="imap.gmail.com"
 $IMAP_SYNC \
 --host1 $HOST1 --user1 $USER1 --password1 $PASS1 -ssl1 \
 --host2 $HOST2 --user2 $USER2 --password2 $PASS2 -ssl2 \
---regextrans2 "s/Archive/All Mail/g" \
+--f1f2 "Archive"="All Mail" \
 --justfolders \
 --exitwhenover 500000000 \
 --maxsize 25000000 \
