@@ -17,7 +17,7 @@ $IMAP_SYNC \
 --exclude "\[Gmail\]$" \
 --regextrans2 "s/[ ]+/_/g" \
 --regextrans2 "s/[\^]/_/g" \
---regextrans2 "s/['\"\\\\]/_/g"
+--regextrans2 "s/['\"\\\\]/_/g" \
 --justfolders # trial run for now
 # --regextrans2 's/INBOX\.Archive/All Mail/'
 # --useheader 'Message-Id' --skipsize
