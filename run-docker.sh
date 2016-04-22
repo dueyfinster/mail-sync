@@ -9,8 +9,8 @@ printf "\n\nKILLING ANY EXISTING CONTAINER \n"
 docker kill $CONTAINER 
 docker rm $CONTAINER 
 
-printf "\n\nPULLING LATEST \n"
-docker pull dueyfinster/mail-sync
+#printf "\n\nPULLING LATEST \n"
+#docker pull dueyfinster/mail-sync
 
 printf "\n\nRUNNING LATEST \n"
 docker run -t -i -d --name $CONTAINER -e USER1="$USER1" -e PASS1="$PASS1" -e USER2="$USER2" -e PASS2="$PASS2" -v "$DIR/scripts":/scripts dueyfinster/mail-sync
