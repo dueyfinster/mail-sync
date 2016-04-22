@@ -14,10 +14,10 @@ $IMAP_SYNC \
 --expunge1 \
 --addheader \
 --exclude "\[Gmail\]$" \
---regextrans2 "s/Archive/All Mail/g" \
---regextrans2 "s/[ ]+/_/g" \
 --regextrans2 "s/[\^]/_/g" \
 --regextrans2 "s/['\"\\\\]/_/g" \
+#--regextrans2 "s/Archive/All Mail/g" \
+#--regextrans2 "s/[ ]+/_/g" \
  # trial run for now
 # --regextrans2 's/INBOX\.Archive/All Mail/'
 # --useheader 'Message-Id' --skipsize
