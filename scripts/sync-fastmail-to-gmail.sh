@@ -13,9 +13,9 @@ $IMAP_SYNC \
 --automap \
 --expunge1 \
 --addheader \
---folderlast "INBOX.Archive"
+--folderlast "Archive"
+--regextrans2 "s/Archive/All Mail/g" \
 --exclude "\[Gmail\]$" \
---regextrans2 "s/INBOX\.Archive$/\[Gmail\]\/All Mail$/g" \
 --regextrans2 "s/[\^]/_/g" \
 --regextrans2 "s/['\"\\\\]/_/g" \
 
