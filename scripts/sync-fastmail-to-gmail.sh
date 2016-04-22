@@ -8,7 +8,7 @@ HOST2="imap.gmail.com"
 $IMAP_SYNC \
 --host1 $HOST1 --user1 $USER1 --password1 $PASS1 -ssl1 \
 --host2 $HOST2 --user2 $USER2 --password2 $PASS2 -ssl2 \
---f1f2 "Archive"="All Mail" \
+--f1f2 "INBOX.Archive"="[Gmail]/All Mail" \
 --justfolders \
 --exitwhenover 500000000 \
 --maxsize 25000000 \
